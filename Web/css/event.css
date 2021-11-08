@@ -1,0 +1,86 @@
+.event-container {
+  font-family: "Roboto", sans-serif;
+  margin-top: calc(100% - 170vh);
+  margin-bottom: calc(100% - 180vh);
+  justify-content: center;
+  align-self: center;
+  max-width: 800px;
+  background-color: rgb(255, 255, 255, 0.9);
+  border: 10px white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(54, 54, 54);
+}
+
+.event-container h3.year {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.event-container .event {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  margin: 32px 0;
+}
+
+.event {
+  padding: 10%;
+}
+
+.event .event-left {
+  background: #222;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.event .event-left .date {
+  font-size: 56px;
+}
+
+.event .event-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.event .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 0 24px;
+}
+
+.event .event-right h3.event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #218bbb;
+  text-transform: uppercase;
+}
+
+.event .event-right .event-timing {
+  background: khaki;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.event .event-right .event-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}

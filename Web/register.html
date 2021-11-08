@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="icon" href="Assets/favicon.ico">
+
+  <script type="text/javascript" src="js/register.js"></script>
+  <title>Frawlsalla</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="home.html" id="logo"><img src="Assets/LOGO.png" alt="" width="120px"></a>
+      <a href="home.html" class="navbutton">Home</a>
+      <a href="gallery.html" class="navbutton">Screenshot</a>
+      <a href="event.html" class="navbutton">Event</a>
+      <a href="characters.html" class="navbutton">Characters</a>
+      <a href="register.html" id="register">Play Now</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <form id="form_register" method="POST">
+        <h2> REGISTER </h2>
+
+        <div id="main_area">
+          <div id="label_form">
+            <label for="username">Username</label>
+            <label for="password">Password</label>
+            <label for="confirm">Confirm Password</label>
+            <label for="email">Email</label>
+            <label for="dob">Date of Birth</label>
+            <label for="region">Region</label>
+          </div>
+
+          <div id="input_form">
+            <input type="text" id="username" placeholder="Input Username here" oninput="checkName()" required>
+            <input type="password" id="password" placeholder="Input Password here" oninput="checkPassword()" required>
+            <input type="password" id="confirm" placeholder="Confirm Password" oninput="checkConfirm()" required>
+            <input type="email" id="email" placeholder="Input Email here" oninput="checkEmail()" required>
+            <input type="date" id="dob" min="1900-01-01" oninput="checkDOB()" required>
+            <select name="region" id="region" required>
+              <option value="">Select...</option>
+              <option value="America">America</option>
+              <option value="Europe">Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="input_gender">
+          <label>Gender</label>
+          <input type="radio" name="selectGender" id="userMale" value="Male" required>
+          <label for="userMale">Male</label>
+          <input type="radio" name="selectGender" id="userFemale" value="Female" required>
+          <label for="userFemale">Female</label>
+        </div>
+
+
+        <div id="term">
+          <input type="checkbox" id="checkbox" required><label for="checkbox">I agree to terms and conditions</label>
+        </div>
+
+        <input type="submit">
+      </form>
+    </div>
+
+    <footer>
+      <div>
+        <img src="Assets/Frawlsalla__outrun_future.png" alt="" width="200px">
+      </div>
+    </footer>
+
+</body>
+
+</html>

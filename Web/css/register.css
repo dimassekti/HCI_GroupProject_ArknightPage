@@ -1,0 +1,107 @@
+body {
+  width: 100%;
+}
+
+label {
+  color: black;
+  font-size: 20px;
+}
+
+form {
+  z-index: 2;
+}
+
+input,
+select,
+select option {
+  border-radius: 5px;
+  margin: 0.2em;
+  width: 28em;
+  color: black;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1em;
+}
+
+input[type="submit"] {
+  background-color: yellow;
+  width: 10em;
+  color: black;
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+}
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  padding: 5em;
+  display: flex;
+  margin-top: 12vh;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+.container * {
+  padding: 5px;
+  color: goldenrod;
+}
+
+.container input,
+.container select,
+.container option {
+  color: black;
+}
+
+#form_register {
+  margin: 1em;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.69);
+  border: 10px black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(54, 54, 54);
+}
+
+#main_area {
+  display: flex;
+  width: max-content;
+  text-align: left;
+}
+
+#label_form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+#input_form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 799px) {
+  label {
+    color: black;
+    font-size: 1em;
+  }
+
+  input,
+  select,
+  select option {
+    border-radius: 5px;
+    margin: 0.2em;
+    width: 10em;
+    color: black;
+  }
+}
